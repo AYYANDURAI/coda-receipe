@@ -1,0 +1,287 @@
+.description {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.description__container {
+    display: flex;
+    flex-direction: row;
+}
+
+.description__detail {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 200px;
+}
+
+.description__detail>h3 {
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+.description__detail>p {
+    text-align: justify;
+    width: 75%;
+}
+
+.info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    justify-content: center;
+    margin-top: 20px;
+    text-align: right;
+    color: rgb(148, 145, 145);
+    margin-left: 20px;
+}
+
+.info>div {
+    color: #fff;
+    background-color: black;
+    margin-right: 20px;
+    text-align: center;
+    width: 95px;
+    height: 95px;
+    border-radius: 50px;
+}
+
+.info__data>h2 {
+    font-size: 30px;
+    margin-top: 18px;
+    font-weight: 600;
+}
+
+
+.info__data>p {
+    font-size: 13px;
+}
+
+.info__data--bucks>h2 {
+    margin-top: 17px;
+    font-weight: 600;
+}
+
+.info__data--bucks>p {
+    font-size: 13px;
+}
+
+textarea {
+    border-radius: 12px;
+    outline: none;
+}
+
+
+textarea::placeholder {
+    padding: 15px;
+    color: rgb(148, 145, 145);
+}
+
+.rating {
+    background-color: #000;
+    padding: 2px 6px;
+    color: white;
+    font-size: 11px;
+    border-radius: 3px;
+    text-align: center;
+    margin-right: 10px;
+}
+
+.right {
+    margin-right: 0px;
+}
+
+.description__detail img {
+    margin-left: 210px;
+    margin-top: 100px;
+    width: 35px;
+    height: 35px;
+    object-fit: contain;
+}
+
+.description__detail h4 {
+    margin-left: 195px;
+    margin-top: 5px;
+    font-weight: 350;
+    font-size: .9rem;
+}
+
+.description__detail>p {
+    color: rgb(148, 145, 145);
+}
+
+.right>p {
+    margin-top: 20px;
+    margin-bottom: 40px;
+    text-align: right;
+    color: rgb(148, 145, 145);
+}
+
+.right>h2 {
+    margin-bottom: 20px;
+    text-align: right;
+    margin-top: -20px;
+}
+
+.right>h4 {
+    text-align: right;
+    margin-top: 20px;
+    color: rgb(148, 145, 145);
+}
+
+.right>h5 {
+    text-align: right;
+}
+
+.description__img1 {
+    object-fit: cover;
+    width: 240px;
+    height: 330px;
+    float: right;
+    z-index: -1;
+    top: -100px;
+    right: 0px;
+    position: absolute;
+    transform: translateY(-10%);
+}
+
+.description__img5 {
+    object-fit: contain;
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    left: -50px;
+    top: 1440px;
+    z-index: -1;
+}
+
+.description__img4 {
+    object-fit: contain;
+    z-index: -1;
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    top: 700px;
+    right: -40px;
+}
+
+.description__img3 {
+    object-fit: contain;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    z-index: -1;
+    top: 630px;
+    right: 50px;
+}
+
+.description__img2 {
+    object-fit: contain;
+    position: absolute;
+    left: 100px;
+    top: 400px;
+}
+
+.comment-section>h3 {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    text-align: right;
+    text-transform: uppercase;
+    color: black;
+}
+
+.comment-section {
+    color: rgb(148, 145, 145);
+}
+
+.comment-section h4 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.comment-form>button {
+    width: 100%;
+    padding: 15px;
+    margin-top: 10px;
+    border-radius: 10px;
+    border: none;
+    background-color: black;
+    color: white;
+    text-transform: uppercase;
+}
+
+.footer-text {
+    text-align: center;
+    text-transform: uppercase;
+    color: rgb(148, 145, 145);
+    font-weight: 450;
+    font-size: 20px;
+    letter-spacing: 2px;
+    display: none;
+}
+
+.right-info {
+    margin-right: 250px;
+    width: 40%;
+}
+
+.home {
+    position: absolute;
+    top: 0;
+    left: 200px;
+}
+
+.home:hover {
+    font-size: 22px;
+    cursor: pointer;
+    color: blue;
+}
+
+a {
+    text-decoration: none;
+}
+
+@media screen and (max-width:768px) {
+    .description__container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-left: -280px;
+        margin-top: 100px;
+    }
+
+    .description__detail {
+        margin-left: 10px;
+    }
+
+    .description__img1 {
+        left: 380px;
+    }
+
+    .description__img2 {
+        left: 10px;
+    }
+
+    .info>div {
+        width: 140px;
+        height: 120px;
+        border-radius: 50%;
+    }
+
+    .comment-form>button {
+        width: 100%;
+    }
+
+    .comments {
+        width: 100%
+    }
+
+    .right-info {
+        margin-left: 300px;
+    }
+
+    .description__detail>p {
+        width: 470px;
+    }
+}
